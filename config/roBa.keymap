@@ -22,7 +22,7 @@
         };
 
         shift_tab {
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp LANG_HIRAGANA>;
             key-positions = <12 13>;
         };
 
@@ -39,6 +39,11 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+        };
+
+        kia {
+            bindings = <&kp LANG3>;
+            key-positions = <12 13 11>;
         };
     };
 
