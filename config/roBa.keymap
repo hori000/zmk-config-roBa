@@ -73,7 +73,7 @@
 &mt LEFT_CONTROL BACKSPACE  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_COMMAND LG(V)  &mt LEFT_ALT LG(C)  &lt 2 SPACE                   &lt 6 DELETE                   &lt 3 LG(Z)                             &lt 2 LG(LS(K_REDO))
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp LG(MINUS) RG(PLUS)>;
         };
 
         FUNCTION {
@@ -102,7 +102,7 @@
 &trans          &trans                  &trans     &trans                   &trans   &trans      &trans  &trans                                                                                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(C_VOLUME_DOWN) LC(C_VOL_UP)>;
         };
 
         MOUSE {
