@@ -40,6 +40,11 @@
             bindings = <&kp LANG2>;
             key-positions = <18 19>;
         };
+
+        katakana {
+            bindings = <&kp LANG_KATAKANA>;
+            key-positions = <11 12>;
+        };
     };
 
     macros {
