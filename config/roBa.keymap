@@ -101,10 +101,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LG(LEFT_ARROW)      &kp LG(T)  &kp LG(RIGHT_ARROW)      &trans                       &trans  &kp LC(LEFT_ARROW)             &kp UP_ARROW         &kp LC(RIGHT_ARROW)              &trans
-&kp HOME        &kp LC(LS(TAB))         &kp LG(T)  &kp LC(TAB)              &kp END  &trans      &trans  &trans  &mt RG(LEFT_ARROW) LEFT_ARROW  &kp DOWN_ARROW       &mt LG(RIGHT_ARROW) RIGHT_ARROW  &kp LC(UP_ARROW)
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LG(W)  &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &kp LG(LEFT_ARROW)             &kp LG(RIGHT_ARROW)  &trans                           &trans
-&trans          &trans                  &trans     &trans                   &trans   &trans      &trans  &trans                                                                                       &trans
+&kp ESCAPE      &kp LG(LEFT_ARROW)      &kp LG(T)  &kp LG(RIGHT_ARROW)      &trans                       &trans  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &trans
+&kp HOME        &kp LC(LS(TAB))         &kp LG(T)  &kp LC(TAB)              &kp END  &trans      &trans  &trans  &mkp MB4            &kp DOWN_ARROW  &mkp MB5             &kp LC(UP_ARROW)
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LG(W)  &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &mkp MB4            &mkp MB5        &trans               &trans
+&trans          &trans                  &trans     &trans                   &trans   &trans      &trans  &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(C_VOLUME_DOWN) LC(C_VOL_UP)>;
@@ -112,7 +112,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &mkp MB5  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
