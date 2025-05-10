@@ -74,7 +74,7 @@
             bindings = <
 &mt EXCLAMATION Q           &kp W         &kp E        &kp R                   &kp T                                                                            &kp Y        &kp U  &lt 5 I    &kp O    &mt MINUS P
 &kp A                       &kp S         &kp D        &kp F                   &kp G               &kp TAB                       &mt LG(LS(NUMBER_4)) LG(A)     &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&mt LEFT_SHIFT Z            &kp X         &kp C        &kp V                   &kp B               &mt LG(LEFT_ARROW) LG(Z)      &mt LG(RIGHT_ARROW) LG(LS(Z))  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT QUESTION
+&mt LEFT_SHIFT Z            &kp X         &kp C        &kp V                   &kp B               &mt LG(LEFT_ARROW) LG(Z)      &mt LG(RIGHT_ARROW) LG(LS(Z))  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_CONTROL QUESTION
 &mt LEFT_CONTROL BACKSPACE  &kp LEFT_WIN  &lt 6 LANG3  &mt LEFT_COMMAND LG(V)  &mt LEFT_ALT LG(C)  &lt 2 SPACE                   &kp BACKSPACE                  &lt 3 LG(Z)                             &lt 6 LG(LS(K_REDO))
             >;
 
