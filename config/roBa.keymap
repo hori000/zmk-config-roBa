@@ -16,24 +16,9 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
         shift_tab {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <12 13>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
 
         english {
@@ -41,9 +26,24 @@
             key-positions = <18 19>;
         };
 
-        katakana {
-            bindings = <&kp LANG_KATAKANA>;
+        copy {
+            bindings = <&kp LG(C)>;
             key-positions = <11 12>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <20 19>;
+        };
+
+        undo {
+            bindings = <&kp RG(Z)>;
+            key-positions = <2 1>;
+        };
+
+        redo {
+            bindings = <&kp RG(RS(Z))>;
+            key-positions = <8 7>;
         };
     };
 
@@ -72,10 +72,10 @@
 
         default_layer {
             bindings = <
-&mt EXCLAMATION Q           &kp W         &kp E        &kp R                   &kp T                                                                            &kp Y        &kp U  &lt 5 I    &kp O    &mt MINUS P
-&kp A                       &kp S         &kp D        &kp F                   &kp G               &kp TAB                       &mt LG(LS(NUMBER_4)) LG(A)     &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&mt LEFT_SHIFT Z            &kp X         &kp C        &kp V                   &kp B               &mt LG(LEFT_ARROW) LG(Z)      &mt LG(RIGHT_ARROW) LG(LS(Z))  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_CONTROL QUESTION
-&mt LEFT_CONTROL BACKSPACE  &kp LEFT_WIN  &lt 6 LANG3  &mt LEFT_COMMAND LG(V)  &mt LEFT_ALT LG(C)  &lt 2 SPACE                   &kp BACKSPACE                  &lt 3 LG(Z)                             &lt 6 LG(LS(K_REDO))
+&mt EXCLAMATION Q  &kp W    &kp E         &kp R                   &kp T                                                             &kp Y        &kp U  &lt 5 I    &kp O    &mt MINUS P
+&kp A              &kp S    &kp D         &kp F                   &kp G             &kp TAB          &mt LG(LS(NUMBER_4)) LG(A)     &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&mt LEFT_SHIFT Z   &kp X    &kp C         &kp V                   &kp B             &lt 6 LG(Z)      &mt LG(RIGHT_ARROW) LG(LS(Z))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
+&kp LEFT_CONTROL   &kp TAB  &kp LEFT_ALT  &mt LEFT_COMMAND LG(V)  &mt LSHIFT LG(C)  &lt 2 SPACE      &kp BACKSPACE                  &lt 3 LG(Z)                             &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp LG(C_VOLUME_DOWN) RG(C_VOL_UP)>;
@@ -112,10 +112,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
