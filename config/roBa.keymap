@@ -17,23 +17,23 @@
         compatible = "zmk,combos";
 
         shift_tab {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <12 13>;
         };
 
         english {
-            bindings = <&kp LANG2>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <18 19>;
         };
 
         copy {
             bindings = <&kp LG(C)>;
-            key-positions = <11 12>;
+            key-positions = <7 6>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
-            key-positions = <20 19>;
+            key-positions = <2 3>;
         };
 
         undo {
