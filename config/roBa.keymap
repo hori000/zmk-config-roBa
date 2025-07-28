@@ -19,7 +19,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -86,10 +85,10 @@
 
         default_layer {
             bindings = <
-&mt EXCLAMATION Q  &kp W             &kp E         &kp R                   &kp T                                                             &kp Y        &kp U  &lt 5 I    &kp O    &mt MINUS P
-&kp A              &kp S             &kp D         &kp F                   &kp G        &kp TAB               &mt LG(LS(NUMBER_4)) LG(A)     &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&mt LEFT_SHIFT Z   &kp X             &kp C         &kp V                   &kp B        &lt 6 UNDERSCORE      &mt LG(RIGHT_ARROW) LG(LS(Z))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
-&kp TAB            &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_COMMAND LG(V)  &lt 4 LG(C)  &lt 2 SPACE           &kp BACKSPACE                  &lt 3 LG(Z)                             &kp TAB
+&mt EXCLAMATION Q  &kp W             &kp E         &kp R                   &kp T                                                                &kp Y        &kp U  &lt 5 I    &kp O    &mt MINUS P
+&kp A              &kp S             &kp D         &kp F                   &kp G        &kp TAB                  &mt LG(LS(NUMBER_4)) LG(A)     &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&mt LEFT_SHIFT Z   &kp X             &kp C         &kp V                   &kp B        &lt 6 LA(LG(LS(Z)))      &mt LG(RIGHT_ARROW) LG(LS(Z))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
+&kp TAB            &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_COMMAND LG(V)  &lt 4 LG(C)  &lt 2 SPACE              &kp BACKSPACE                  &lt 3 LG(Z)                             &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp LG(C_VOLUME_DOWN) RG(C_VOL_UP)>;
@@ -116,7 +115,7 @@
         ARROW {
             bindings = <
 &kp ESCAPE      &kp LG(LEFT_ARROW)      &kp LG(T)  &kp LG(RIGHT_ARROW)      &trans                       &trans  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &trans
-&kp HOME        &kp LC(LS(TAB))         &kp LG(T)  &kp LC(TAB)              &kp END  &trans      &trans  &trans  &kp LS(LC(TAB))     &kp DOWN_ARROW  &kp LC(TAB)          &kp LC(UP_ARROW)
+&kp HOME        &kp LC(LS(TAB))         &kp LG(T)  &kp LC(TAB)              &kp END  &trans      &trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(UP_ARROW)
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LG(W)  &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &mkp MB4            &mkp MB5        &trans               &trans
 &trans          &trans                  &trans     &trans                   &trans   &trans      &trans  &trans                                                           &trans
             >;
